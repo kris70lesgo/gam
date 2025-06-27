@@ -1,0 +1,74 @@
+import type { DashboardData } from "./types"
+
+// Mock data - simulating the provided dummy_data.json
+const mockData: DashboardData = {
+  analyticsSummary: {
+    widgetTitle: "Today's Performance Overview",
+    totalUsers: 12345,
+    newSignupsToday: 78,
+    activeUsers: 5678,
+    revenueToday: "$12,450",
+    conversionRate: "4.2%",
+    recentActivities: [
+      {
+        id: "act1",
+        type: "New User",
+        description: "User 'JohnDoe' signed up.",
+        timestamp: "2025-06-24T09:30:00Z",
+      },
+      {
+        id: "act2",
+        type: "Transaction",
+        description: "Sale of Pro Plan to 'Acme Corp'.",
+        timestamp: "2025-06-24T09:15:00Z",
+      },
+      {
+        id: "act3",
+        type: "Login",
+        description: "User 'JaneSmith' logged in.",
+        timestamp: "2025-06-24T08:50:00Z",
+      },
+      {
+        id: "act4",
+        type: "Update",
+        description: "Dashboard settings updated by 'AdminUser'.",
+        timestamp: "2025-06-24T08:20:00Z",
+      },
+    ],
+  },
+  notifications: [
+    {
+      id: "notif1",
+      message: "Your free trial ends in 3 days!",
+      severity: "high",
+      read: false,
+    },
+    {
+      id: "notif2",
+      message: "New feature: Advanced Reporting is now available.",
+      severity: "info",
+      read: true,
+    },
+  ],
+}
+
+/**
+ * Simulates an API call to fetch dashboard data
+ * Includes artificial delay to mimic network latency
+ */
+export async function fetchDashboardData(): Promise<DashboardData> {
+  // Simulate network delay (500ms - 1.5s)
+  const delay = Math.random() * 1000 + 500
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulate occasional API failures (5% chance)
+      if (Math.random() < 0.05) {
+        reject(new Error("API temporarily unavailable"))
+        return
+      }
+
+      resolve(mockData)
+    }, delay)
+  })
+}
