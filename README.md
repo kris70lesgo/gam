@@ -33,5 +33,26 @@ A responsive, modern, and dynamic dashboard widget built with **Next.js**, **Rea
 
 ---
 
-## 📁 Project Structure
+##📥 Setup Instructions
+Follow these steps to run the application locally:
+
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/dashboard-widget.git
+cd dashboard-widget
+2. Install dependencies
+Make sure you have Node.js installed. Then, run:
+
+bash
+Copy
+Edit
+npm install
+3. Start the development server
+bash
+Copy
+Edit
+npm run dev
+The app will be available at http://localhost:3000.
 
