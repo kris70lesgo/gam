@@ -2,7 +2,7 @@
 
 A responsive, modern, and dynamic dashboard widget built with **Next.js**, **React**, and **Tailwind CSS**. This widget is designed to be a core part of a larger SaaS analytics dashboard, displaying real-time key performance indicators and user activity.
 
-![Dashboard Widget Screenshot](./public/screenshot.png)
+https://v0-create-dashboard-widget.vercel.app/
 
 ---
 
@@ -33,26 +33,30 @@ A responsive, modern, and dynamic dashboard widget built with **Next.js**, **Rea
 
 ---
 
-##📥 Setup Instructions
+## 📥 Setup Instructions
+
 Follow these steps to run the application locally:
 
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/dashboard-widget.git
-cd dashboard-widget
-2. Install dependencies
-Make sure you have Node.js installed. Then, run:
+1. **Clone the repository**
 
-bash
-Copy
-Edit
-npm install
-3. Start the development server
-bash
-Copy
-Edit
-npm run dev
-The app will be available at http://localhost:3000.
+   ```bash
+   git clone https://github.com/kirsh70lesgo/gam.git
+   cd dashboard-widget
+   ```
+
+2. **Install dependencies**
+
+   Make sure you have Node.js installed. Then, run:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
